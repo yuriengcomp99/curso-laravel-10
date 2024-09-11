@@ -6,7 +6,7 @@
 </div>
 
 <div>
- <form action="" method="get">
+ <form action="{{ route('produto.index') }}" method="get">
     <input type="text" name="pesquisar" placeholder="Digite o nome">
     <button>Pesquisar</button>
     <a type="button" href="" class="btn btn-success float-end">
@@ -16,6 +16,9 @@
 </div>
 
 <div class="table-responsive mt-4">
+  @if($findProduto->isEmpty())
+    <P>Produto não encontrado</P>
+  @else 
     <table class="table table-striped table-sm">
       <thead>
         <tr>
@@ -33,7 +36,7 @@
                 <a href="" class="btn btn-light btn-sm">
                     Editar
                 </a>
-                <a href="" class="btn btn-danger btn-sm">
+                <a href="{{ route('produto.delete') }}" class="btn btn-danger btn-sm">
                     Excluir
                 </a>
             </td>
@@ -45,6 +48,7 @@
       
       </tbody>
     </table>
+  @endif
 </div>
 
 
