@@ -245,6 +245,10 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js"></script>
     <script src="{{ asset('js/dashboard.js') }}"></script>
 
+    <!-- input mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask.1.14.10/jquery.mask.js"></script>
+
+
     <!-- Block UI-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js"></script>
     <script src="/js/projeto.js"></script>
